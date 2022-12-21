@@ -1,0 +1,403 @@
+
+
+.baggrund_dug{
+    background-image: url("Images/dug.png");
+    background-repeat: no-repeat;
+    background-position: bottom;}
+
+/* FONT STYLES */
+p{
+    font-family: miller-display,serif;
+    font-weight: 300;
+    font-style: normal;}
+
+h2{
+    font-family: ambroise-std,serif;
+    font-weight: 400;
+    font-style: normal;}
+
+h3{font-family: miller-display,serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 130%;}
+
+h1{ 
+    font-family: lust, serif;
+    font-style: normal;}
+
+#slogan{
+    font-family: lust;
+    font-style: normal;
+    font-weight: 300;}
+
+.italic_span{font-style: italic;}
+
+
+
+
+
+
+
+
+/* BUTTON CLASS */
+.button{
+    border: 1px solid #626262;
+    border-radius: 30px;
+    padding: 4px 30px 4px 30px;
+    transition: all .2s ease-in-out;
+    color: #ffffff;
+    background-color: #626262;
+    text-decoration: none;
+    position: absolute;}
+
+.button:hover{
+    transform: scale(1.3);
+    transition: all .2s ease-in-out;}
+
+
+
+
+
+
+
+
+
+
+/* --- INDEX PASTA ---- */ 
+.main_pasta{
+    display: flex;
+    margin-bottom: 5%;}
+
+
+.main_pasta div:first-child{
+    width: 40%;
+    padding: 8% 0 0 5%;
+    color: #626262;}
+
+/* Pasta tekst */
+.main_pasta div h1{
+    color: #626262; 
+    font-size: 200%;}
+
+.main_pasta div p{
+    font-size: 110%;
+    line-height: 170%;
+    color: #817e7e;}
+
+/* Pasta konkurrence link */
+.main_pasta img{padding:10% 0% 5% 12%;}
+  
+.main_pasta img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- INDEX OPSKRIFTER ----*/
+.opskrifter_container{
+    display: flex;
+    text-align: center;
+    gap: 5%;
+    margin: 5% 7% 8% 7%;}
+
+.opskrifter_container div h2{color: #626262;}
+
+.opskrifter_container div h2:hover{
+    transform: scale(1.3);
+    transition: all .2s ease-in-out;}
+
+.opskrifter_container div img{
+    opacity: 0.9;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+    border: 2px solid #ddb350a0;}
+
+.opskrifter_container div img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;}
+
+/* Opskrifter tekst */
+#opskrifter_skrift h1{
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+    color: #ddb350;}
+
+#opskrifter_skrift p{
+    color: #626262ce;
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 3%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- INDEX OPSKRIFTER UNDERSIDE ---- */
+
+/* Opskrifter underside tekst */
+.opskrifter_underside_container h1{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 60px;
+    transition: all .2s ease-in-out;
+    font-size: 188%;
+    color: #ddb350;}
+
+.opskrifter_underside_container div h2{ 
+    margin:6% 0% 2% 0%;
+    text-align: left;
+    font-size: 25px;
+    color: #626262;}
+
+.opskrifter_underside_container div p{
+    font-size: 16px;
+    line-height: 32px;
+    color: #686767;}
+
+/* Opskrifter underside container */
+.opskrifter_underside_container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;}
+
+.opskrifter_underside_container div:first-child{width: 30%;}
+
+.opskrifter_underside_container div:nth-child(2){
+    width: 30%;
+    margin-top: 6%;
+    padding-left: 8%;}
+
+.opskrifter_underside_container div:last-child{
+    margin: 5% 5% 0% 0%;
+    width: 40%;}
+
+.opskrifter_underside_container div img{
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+    border: 2px solid #ddb350a0;
+    margin: 13% 0% 0% 12%;}
+
+.opskrifter_underside_container div img:hover{transform: scale(1.1);}
+
+
+/* Opskrifter underside tabel */
+table{
+    width: 80%;
+    border-radius: 20px;}
+
+th, td{
+    border-bottom: 0.5px solid #62626268;
+    text-align: left;
+    vertical-align: center;
+    padding: 3px;
+    color: #626262;
+    font-family: lust-text, serif;
+    font-weight: 300;
+    font-style: normal;}
+
+th{
+    height: 40px;
+    color: #171717;}
+
+tr:hover {background-color: #ffd67737;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INDEX KAMPAGNE */
+
+/* Kampagneside video og tekst */
+#kampagne{background-color: #484141;}
+#kampagne_banner video{position: relative;}
+#kampagne_indhold h1{display: none;}
+
+#kampagne_banner{margin-top: 3%;}
+
+/* Kampagneside tekst og billede */
+#kampagne_indhold{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin: 3% 0 3% 0;
+    text-align: left;}
+
+#kampagne_indhold div:first-child{
+    padding: 10% 5% 10% 1%;   
+    text-align: center;}
+
+#kampagne_indhold div:last-child{padding: 1% 0% 1% 0%;}
+
+
+#kampagne_indhold a{
+    display: block;
+    margin-right: 70%;
+    margin-top: 5%;}
+
+/* Kampagneside tekst */
+#kampagne_indhold p, #kampagne_indhold h2{
+    text-align: center;
+    color: #ffffff;}
+
+#kampagne_indhold p{
+    font-size: 120%;
+    font-family: lust-text, serif;
+    line-height: 200%;}
+
+#kampagne_indhold h2{
+    font-size: 140%;
+    color: #FFFDEB;
+    font-family: lust, serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INDEX ØKOLOGI */
+
+.main_økologi{
+    display: flex;
+    margin-bottom: 8%;}
+
+.main_økologi img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;}
+
+.column{flex-direction: column;}
+
+.column a{margin-left: 16%;}
+
+.column img{
+    left: 0;
+    margin-top: 20%;}
+
+#økologi{
+    width: 60%;
+    padding: 5% 0 5% 5%;}
+
+#økologi h1{
+    color:#ddb350;
+    margin-top: 9%;}
+
+#økologi h2{
+    color:#525252;
+    padding-top: 2%;}
+
+#økologi p{
+    color: #626262;
+    margin-bottom: 3%;
+    font-size: 110%;
+    line-height: 21pt;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INDEX KONKURRENCE */
+#main_konkurrence{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    margin-top: 5%;
+    color: #626262;}
+
+#main_konkurrence h1{font-size: 250%}
+
+#konkurrence_box{display: flex;}
+
+#konkurrence_box div:first-child{width: 40%;}
+
+#konkurrence_box div:last-child{width: 60%;}
+
+.form_div input{
+    background-color:#ddb35027;
+    border: 1px solid #ddb35089;
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 10px;}
+
+
+.checkbox{display: flex;}
+
+.checkbox input{position: relative;}
+
+.checkbox p{
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 50px;}
+
+
+
+

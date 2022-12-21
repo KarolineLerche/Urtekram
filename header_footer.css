@@ -1,0 +1,601 @@
+
+
+
+/* --- GENERELLE REGLER --- */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;}
+
+/* Giver main overflow:hidden, da der ellers var et gap mellem main baggrundsbilledet og footeren */
+main{overflow: hidden}
+
+/* Forside logo */
+#forside_logo{width:74%;}
+
+/* Kampagneside header */
+#header_kampagneside nav a, #header_kampagneside a{color: #ffffff;}
+
+#header_kampagneside nav a:hover{
+    color: black;
+    background-color: #FFFDEB;}
+
+#kampagne_logo{width:69%;}
+ 
+    
+/* Tilmeld Nyhedsbrev knap KAMPAGNE */
+#nyhedsbrev-button_kampagne{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 7%;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    padding: 4px 10px 4px 10px;
+    transition: all .2s ease-in-out;
+    color: #CCA13F;
+    font-family: miller-display,serif;
+    font-weight: 300;
+    text-decoration: none;}
+  
+#nyhedsbrev-button_kampagne:hover{
+    background-color: #a8a8a845;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    border: 1px solid #4a4a4a;
+    color: #626262;}
+
+.kampagne_menu{
+    color: #4f4941;}
+    
+.kampagne_menu:hover{
+    color: #ffffff;
+    background-color: #382e135c;
+    border-radius: 30px;
+    padding: 8px 15px 8px 15px;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;}
+    
+
+
+
+
+
+
+
+/* --- HEADER --- */
+
+/* Logo og nyhedsbrev flexbox*/
+.logo-flexbox{
+    display: flex;
+    width: 100%;}
+
+/* Logo */
+.logo-flexbox div:first-child{
+    width: 76%;
+    margin: 2%;
+    height: 130px;}
+
+.logo-flexbox div:first-child a img{
+    max-width:100%;
+    max-height:100%;
+    float: right;}
+
+header img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;}
+
+/* Tilmeld Nyhedsbrev knap */
+#nyhedsbrev-button{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 7%;
+    border: 1px solid #CCA13F;
+    border-radius: 30px;
+    padding: 4px 10px 4px 10px;
+    transition: all .2s ease-in-out;
+
+    color: #CCA13F;
+    font-family: miller-display,serif;
+    font-weight: 300;
+    text-decoration: none;}
+  
+#nyhedsbrev-button:hover{
+    background-color: #a8a8a845;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    border: 1px solid #4a4a4a;
+    color: #626262;}
+
+
+/* Menulinje */
+nav{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;}
+
+header nav a{
+    padding: 3%;
+    color: #CCA13F;
+    font-family: lust-text, serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;}
+
+header nav a:hover{
+    color: #626262;
+    background-color: #ffe29842;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    font-size: 15px;}
+
+
+
+
+
+/*---- RESPONSIVE NAV HTML ----*/
+#nav_resp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+#nav_resp div{
+    justify-content: center;
+    padding: 5%;}
+
+
+/* Her får jeg billedet til at skalere efter dens div */
+#nav_resp div:first-child img{
+    max-width:100%;
+    max-height:100%;}
+
+#nav_resp div:first-child{
+    height: 50%;
+    width: 50%;}
+
+#nav_resp div:last-child img{
+    max-width:100%;
+    max-height:100%;}
+
+#nav_resp div:last-child{
+    height: 50%;
+    width: 50%;}
+
+
+#nav_resp a{
+    font-family: lust, serif;
+    font-style: normal;
+    font-size: 200%;
+    text-align: center;
+    color: #CCA13F;
+    line-height: 50px;}
+
+.font_type{
+    font-family: lust, serif;
+    font-style: normal;
+    font-size: 100%;
+    text-align: center;
+    color: #626262;
+    line-height: 20px;}
+
+
+
+
+
+
+
+/* Footer Forside */
+#footer_forside p, #footer_forside h1{color: #d7b35e;}
+
+
+/* Footer kampagneside */
+#footer_kampagneside, #footer_kampagneside p, #footer_kampagneside h1{color: #ABA7A6;}
+
+#footer_kampagneside{
+    display: flex;
+    background-color: #544D49;
+    width: 100%;
+    background-image: none;
+    flex-direction: row;
+    height: fit-content;}
+
+
+
+
+/*---- FOOTER ----*/
+#footer_forside{
+    background-image: url("Images/footer.png");
+    background-repeat: no-repeat;
+    background-position: bottom;}
+
+footer{
+    background-image: url("Images/footer.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #626262;
+    padding: 5%;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2.5%;
+    display: flex;}
+
+footer div:nth-child(2){text-align: center;}
+
+footer div:first-child{
+    padding-left: 2%;
+    padding-right: 20%;}
+
+footer div:last-child{
+    padding-right: 2%;
+    padding-left: 20%;}
+
+
+/* Footer tekst */
+footer p{
+    line-height: 17px;
+    font-size: 95%;}
+
+
+footer div:last-child{text-align: right;}
+
+footer h1{font-size: 23px;}
+
+footer p:hover, footer h1:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;}
+
+#medier{
+    font-size: 120%;
+    margin-bottom: 0;
+    color: #0125b7;}
+
+footer div:last-child p{margin-bottom: 8%;}
+  
+  
+/* Footer nyhedsbrev knap */
+/* Her får jeg søgefeltet til at centrere teksten */
+form input{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    font-family: lust-text, serif;}
+  
+/* Footer tilmeldingsknap */
+form button{
+    background-color:#626262;
+    color: #ffffff;
+    border: 1px solid #626262;
+    border-radius: 30px;
+    padding: 6px 17px;
+    font-size: 13px;
+    font-family: lust-text, serif;}
+  
+form button:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    background-color: #a8a8a845;
+    border: 1px solid #4a4a4a;
+    color: #626262;}
+  
+/* Footer sociale medier ikoner */
+.social-icons{
+    margin-top: 0;
+    justify-content: center;
+    size: 150%;}
+    
+.social-icons i{
+    padding-right: 5%;
+    font-size: 200%;
+    color: #0125b7;}
+  
+.social-icons i:hover{
+    transform: scale(1.3);
+    transition: all .2s ease-in-out;
+    color: #49dbff;}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----RESPONSIVE----*/
+
+/*----LAPTOP----*/
+@media screen and (min-width: 980px){
+
+.responsive{display: none;}
+.responsive_burger{display: none;}
+#responsive_forside{display: none;}
+
+/* BAGGRUNDSBILLEDER */
+#forside_baggrund{
+    background-image: url("Images/index_baggrund.png");
+    background-repeat: no-repeat;
+    background-position-y: 60px;}
+
+.dug_baggrund{
+    background-image: url("Images/footer_dug.png");
+    background-repeat: no-repeat;
+    background-position: bottom;}
+
+/* Sætter margin-top på <footer>, da forsiden ikke indeholder <main>.  
+Derfor ville <footer> automatisk ryge op til header, hvis ikke den havde margin-top. */
+#footer_forside{margin-top: 43.5%;}
+
+
+/* PASTA INDEX LAPTOP */
+.main_pasta div:nth-child(2){
+    width: 40%;
+    margin-top: 2%;
+    background-image: url(images/produkt_forfra.png);
+    background-repeat: no-repeat;
+    background-size: 100%;}
+    
+.main_pasta div:nth-child(2):hover{
+    background-image: url(images/produkt_bagside.png);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    background-repeat: no-repeat;}
+
+.main_pasta div:last-child{
+    position: absolute;
+    margin: 10% 0 0 77%;
+    color: #ddb350;
+    font-size: 150%;}
+
+/* KAMPAGNE INDEX LAPTOP */
+#kampagne_banner h1{
+    font-size: 330%;
+    font-style: normal;
+    font-family: lust, serif;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    width: 100%;}
+
+}
+
+
+
+/* RESPONSIVE MEDIA */ 
+@media screen and (max-width:980px){
+
+.responsive_burger{
+    position: absolute;
+    color: #ddb350;
+    font-size: 300%;
+    right: 5%;
+    top:2%;}
+       
+.responsive{
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;}
+
+
+
+/* FORSIDE */ 
+#forside_baggrund{background-image: none;}
+
+#responsive_forside div:first-child{margin-right: 25%;}
+
+#responsive_forside a{
+    border: 1px solid #CCA13F;
+    background-color: #d7b35eb8;}
+
+
+/*---- HEADER RESPONSIVE ----*/
+nav a{display:none;}
+  
+.logo-flexbox{display: none;}
+
+
+header div img{
+        max-width:100%;
+        max-height:100%;}
+    
+header div:last-child{
+        margin: 10%;
+        padding: 7%;
+        top:0;
+        height: 80%;
+        width: 80%;}
+
+#responsive_forside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+           
+#responsive_forside img{float: bottom;}
+           
+/* Får nav billede til at skalere efter div */
+    #nav_resp div:last-child{
+    height: 85%;
+    width: 85%;}
+
+
+
+
+
+
+/*---- PASTA INDEX RESPONSIVE ----*/
+.main_pasta{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;}
+
+.main_pasta h1, .main_pasta p{
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 190%;
+    text-align: center;}
+
+.main_pasta a img{
+    display: block;
+    margin-left: 55%;
+    margin-right: 55%;
+    width: 120%;
+    justify-content: center;}
+
+.main_pasta div:nth-child(3) img{
+    width: 90%;
+    justify-content: center;}
+
+#slogan{
+    color:#d7b35e;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 10%;}
+
+
+
+
+/*---- OPSKRIFTER INDEX RESPONSIVE----*/
+.opskrifter_container{
+    flex-direction: column;
+    margin-left: 35%;
+    margin-right: 35%;}
+
+
+
+/*---- OPSKRIFTER UNDERSIDE INDEX RESPONSIVE----*/
+.opskrifter_underside_container{
+        flex-direction: column;
+        width: 100%;}
+
+.opskrifter_underside_container div{
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;}
+
+.opskrifter_underside_container table{width: 300px;}
+
+.opskrifter_underside_container div h1{
+    width: 220%;
+    margin: 0 30% 10% 30%;}
+   
+.opskrifter_underside_container div:last-child p, .opskrifter_underside_container div:last-child h2{  
+    padding: 0% 20% 0% 20%;
+    text-align: center;
+    width: 250%;}
+
+.opskrifter_underside_container div:last-child{margin: 20% 30% 20% 30%;}
+
+
+
+
+
+
+
+
+/*---- KAMPAGNE INDEX RESPONSIVE ----*/
+#kampagne_indhold{
+    display: flex;
+    flex-direction: column;}
+
+#kampagne_indhold div{ 
+    text-align: center;
+    width: 100%;}
+
+#kampagne_indhold div p, #kampagne_indhold div h2{font-size: 100%;}
+
+#kampagne_banner h1{
+        font-size: 200%;
+        text-align: center;
+        color: white;
+        position: sticky;
+        margin-top: 7%;}
+
+/*---- ØKOLOGI INDEX RESPONSIVE ----*/
+.main_økologi{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;}
+
+.column a{margin-right: 13%;}
+
+
+/*---- NYHEDSBREV/KONKURRENCE RESPONSIVE ----*/
+#konkurrence_box img{display:none;}
+
+#konkurrence_box{
+    display:block;
+    margin-left:10%;
+    margin-right:60%;
+    width:auto;}
+
+
+    
+/*---- FOOTER RESPONSIVE----*/
+footer{
+    flex-direction: column;
+    display: flex;}
+
+footer div{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    width: 80%;}
+
+footer div:first-child{
+    margin-bottom: 8%;}
+
+footer div:last-child{
+    padding-left: 5%;
+    text-align: center;
+    margin-bottom: 10%;}
+    
+
+footer p{display: none;}
+
+hr{display: none;}
+
+
+/*---- Footer kampagneside ----*/
+#footer_kampagneside{
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding-top: 10%;}}
+
+#footer_kampagneside div{text-align: center;}
+#footer_kampagneside div:last-child{text-align: center;}
+
+
+
+
+
