@@ -209,12 +209,12 @@ header nav a:hover{
 
 /*---- FOOTER ----*/
 #footer_forside{
-    background-image: url("Images/footer.png");
+    background-image: url("images/footer.png");
     background-repeat: no-repeat;
     background-position: bottom;}
 
 footer{
-    background-image: url("Images/footer.png");
+    background-image: url("images/footer.png");
     background-repeat: no-repeat;
     background-position: bottom;
     color: #626262;
@@ -332,12 +332,12 @@ form button:hover{
 
 /* BAGGRUNDSBILLEDER */
 #forside_baggrund{
-    background-image: url("Images/index_baggrund.png");
+    background-image: url("images/index_baggrund.png");
     background-repeat: no-repeat;
     background-position-y: 60px;}
 
 .dug_baggrund{
-    background-image: url("Images/footer_dug.png");
+    background-image: url("images/footer_dug.png");
     background-repeat: no-repeat;
     background-position: bottom;}
 
